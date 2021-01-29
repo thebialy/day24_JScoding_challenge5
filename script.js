@@ -48,3 +48,28 @@ console.log(myReplace("A quick brown fox Jumped over the lazy dog", "Jumped", "l
 //     }
 //     return words.join(" ")
 // }
+
+// Challenge 3
+// Pig Latin (Input strings are guaranteed to be English words in all lowercase)
+
+const translatePigLatin= (str) => {
+    let firstPosition = findFirstVowel(str)
+
+    if (firstPosition > 0) {
+        return str.slice(firstPosition) + str.slice(0, firstPosition) + 'ay'
+    }
+    return str+ "way"
+
+    return str
+}
+
+const findFirstVowel = (str) => {
+    for (let i=0; i<str.length; i++) {
+        if("aeiou".indexOf(str[i]) !== -1) {
+            return i
+        }
+    }
+}
+
+console.log(translatePigLatin("consonant"))
+
