@@ -73,3 +73,13 @@ const findFirstVowel = (str) => {
 
 console.log(translatePigLatin("consonant"))
 
+// Alternate way using regex
+// const translatePigLatin = (str) => {
+//     let firstVowel = str.match(/[aeiou]/)
+//     let firstPosition = str.indexOf(firstVowel)
+
+//     if (firstPosition > 0) {
+//         return str.slice(firstPosition) + str.slice(0, firstPosition) + 'ay'
+//     }
+//     return str + "way"
+// }
