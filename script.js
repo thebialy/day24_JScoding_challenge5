@@ -31,7 +31,7 @@ const myReplace = (str, before, after) => {
   return str.replace(before, after)
 }
 
-console.log(myReplace("A quick brown fox Jumped over the lazy dog", "Jumped", "leaped"))
+myReplace("A quick brown fox Jumped over the lazy dog", "Jumped", "leaped")
 
 // Alternate solution without using .replace
 
@@ -71,7 +71,7 @@ const findFirstVowel = (str) => {
     }
 }
 
-console.log(translatePigLatin("consonant"))
+translatePigLatin("consonant")
 
 // Alternate way using regex
 // const translatePigLatin = (str) => {
