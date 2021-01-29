@@ -18,4 +18,7 @@ const whatIsiNAName = (collection, source) => {
     })
 }
 
-console.log(whatIsiNAName([{ first: "Romeo", last: "Montague"}, { first: "Mercuttio", last: null }, { first: "Tybalt", last: "Capulet"}], { last: "Capulet"}));
+whatIsiNAName([{ first: "Romeo", last: "Montague"}, { first: "Mercuttio", last: null }, { first: "Tybalt", last: "Capulet"}], { last: "Capulet"});
+
+// Challenge 2
+// Search and Replace (Perform a search and replace on the sentence using the arugments provided and return the new sentence)
