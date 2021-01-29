@@ -22,3 +22,13 @@ whatIsiNAName([{ first: "Romeo", last: "Montague"}, { first: "Mercuttio", last: 
 
 // Challenge 2
 // Search and Replace (Perform a search and replace on the sentence using the arugments provided and return the new sentence)
+// 3 Arguments
+
+const myReplace = (str, before, after) => {
+  if(before[0] === before[0].toUpperCase()) {
+      after = after[0].toUpperCase() + after.slice(1)
+  }
+  return str.replace(before, after)
+}
+
+console.log(myReplace("A quick brown fox Jumped over the lazy dog", "Jumped", "leaped"))
